@@ -5,21 +5,21 @@
 class Tbd < Formula
   desc "A sweet and speedy code generator for dbt."
   homepage "https://github.com/gwenwindflower/tbd"
-  version "0.0.15"
+  version "0.0.16"
   license "GPL-3.0"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/gwenwindflower/tbd/releases/download/v0.0.15/tbd_Darwin_x86_64.tar.gz"
-    sha256 "482777b8133c8d84f498de817d6cbe0abd396136518b3946dd9369691a15094d"
+    url "https://github.com/gwenwindflower/tbd/releases/download/v0.0.16/tbd_Darwin_x86_64.tar.gz"
+    sha256 "c577c3b640692a5ca8e6ddc4e69308d12937cb069f91277dafa71aa691aca1fd"
 
     def install
       bin.install "tbd"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/gwenwindflower/tbd/releases/download/v0.0.15/tbd_Darwin_arm64.tar.gz"
-    sha256 "a2d9705475acf0e0f0927ce0ae2c92276fa5d3f625622dfe07cc826f88963092"
+    url "https://github.com/gwenwindflower/tbd/releases/download/v0.0.16/tbd_Darwin_arm64.tar.gz"
+    sha256 "6ca7db686efb7ba357f74832e65f408c0f5ebda1edf0169674480c8555e2f4f1"
 
     def install
       bin.install "tbd"
